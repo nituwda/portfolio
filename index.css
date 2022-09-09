@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  margin-right: 10px;
+}
+
+nav > a {
+  text-transform: uppercase;
+  margin: 10px 10px;
+  font-size: 15px;
+  font-family: Inter, sans-serif;
+  text-decoration: none;
+}
+
+.intro {
+  font-family: Work Sans, sans-serif;
+  font-weight: normal;
+}
+
+.intro > h1 {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+}
+
+.intro > p:first-of-type {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.intro > p:nth-child(3) {
+  font-size: 40px;
+  font-weight: bold;
+  color: gray;
+}
+
+.intro > p:nth-child(4) {
+  font-size: 17px;
+  font-weight: normal;
+  color: white;
+  width: 65%;
+  font-family: Inter;
+}
+
+.intro > h1,
+p {
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 10vw;
+}
+
+.about-me {
+  padding-top: 10vh;
+  margin-top: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-title {
+  font-family: Inter, sans-serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 100;
+}
+
+.about-me-title::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 350px;
+  top: -20px;
+  height: 1px;
+  left: 30%;
+  background-color: gray;
+}
+
+.about-me > div > p {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  width: 65%;
+}
+
+.skills {
+  display: flex;
+}
+
+.skills > ul > li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Inter, sans-serif;
+  list-style-type: circle;
+}
+
+.grad-pic {
+  margin-right: 20px;
+}
+
+.experience {
+  padding-top: 10vh;
+  margin-top: 40vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.exp-container {
+  border: 1px solid white;
+  padding: 10px;
+  width: 49%;
+  height: 100%;
+}
+
+.exp-title {
+  font-family: Inter, sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.exp-title::after {
+  content: "";
+  width: 250px;
+  height: 1px;
+  background-color: gray;
+  display: block;
+  position: relative;
+  left: 20%;
+  top: -20px;
+}
+
+.exp-container > * {
+  width: 65%;
+}
+
+.exp-container > h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.exp-container > p {
+  font-family: Work Sans, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+svg {
+  fill: white;
+  margin: 0 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.contact {
+  padding-top: 10vh;
+  margin-top: 40vh;
+}
+
+.contact-title {
+  font-size: 40px;
+  font-family: Inter;
+  font-weight: 100;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.icons {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 2%;
+  gap: 20px;
+  top: 40%;
+}
+
+.icons::before {
+  width: 200px;
+  height: 2px;
+  background-color: gray;
+  display: block;
+  position: relative;
+  top: 2px;
+  left: 20px;
+}
+
+form {
+  margin: 10vh auto;
+  width: 500px;
+}
+
+.full-name,
+.email,
+.number,
+.message,
+textarea,
+.btn-submit {
+  width: 100%;
+  background-color: white;
+  color: black;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border-radius: 1px solid white;
+  font-family: Work Sans, sans-serif;
+}
+
+input:active,
+textarea:active {
+  border: none;
+}
+
+span {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+}
+
+.btn-submit {
+  font-family: Work Sans, sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
