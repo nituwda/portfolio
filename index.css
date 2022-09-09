@@ -1,9 +1,20 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  background-color: black;
   color: white;
-  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+.grad-pic {
+  width: 500px;
+  height: 500px;
 }
 
 header {
@@ -75,6 +86,7 @@ main {
   font-size: 40px;
   margin-bottom: 30px;
   font-weight: 100;
+  letter-spacing: 5px;
 }
 
 .about-me-title::after {
@@ -125,7 +137,7 @@ main {
 .exp-container {
   border: 1px solid white;
   padding: 10px;
-  width: 49%;
+  width: 35%;
   height: 100%;
 }
 
@@ -134,6 +146,7 @@ main {
   font-weight: 100;
   font-size: 40px;
   margin-bottom: 30px;
+  letter-spacing: 5px;
 }
 
 .exp-title::after {
@@ -143,24 +156,45 @@ main {
   background-color: gray;
   display: block;
   position: relative;
-  left: 20%;
+  left: 23%;
   top: -20px;
-}
-
-.exp-container > * {
-  width: 65%;
 }
 
 .exp-container > h1 {
   font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .exp-container > p {
   font-family: Work Sans, sans-serif;
   font-weight: normal;
   font-size: 15px;
+  font-style: italic;
+  cursor: default;
+}
+
+.exp-container > ul > li {
+  font-family: Work Sans, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+.exp-container:hover {
+  transition: all ease-in 0.2s;
+  background-color: white;
+}
+
+.exp-container:hover > small,
+.exp-container:hover > h1,
+.exp-container:hover > .job-desc,
+.exp-container:hover > ul > li {
+  color: black;
 }
 
 svg {
@@ -239,4 +273,10 @@ span {
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+small {
+  font-family: Work Sans, sans-serif;
+  margin-bottom: 10vh;
+  color: lightgrey;
 }
